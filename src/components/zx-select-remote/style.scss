@@ -1,0 +1,100 @@
+.zx-select-remote {
+  font-size: 12px;
+  line-height: 1.2;
+  position: relative;
+  box-sizing: border-box;
+  user-select: none;
+  > div {
+    background-color: #ffffff;
+    border: 1px solid #dcdee2;
+    border-radius: 3px;
+  }
+  .el-input-medium {
+    height: 30px;
+  }
+  .tags-wrap {
+    padding: 0 5px;
+    background-color: #ffffff;
+    .tag-selected {
+      width: auto;
+      display: inline-block;
+      padding: 5px;
+      border: 1px solid #e8eaec;
+      border-radius: 3px;
+      background: #f7f7f7;
+      overflow: hidden;
+      margin: 3px 0 0;
+      margin-right: 5px;
+    }
+    .full-width {
+      width: 100%;
+      margin-right: 0px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      &:first-child {
+        margin-bottom: 0;
+        margin-top: 3px;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .el-input {
+    border: 0;
+    outline: none;
+    .el-input__inner {
+      border: 0;
+      padding: 0 5px;
+      text-indent: 10px;
+    }
+    &:focus {
+      border: 0;
+      box-shadow: none;
+    }
+  }
+  .input-auto {
+    width: 98px;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    line-height: normal;
+  }
+  .dropdown-options-wrap {
+    width: 100%;
+    .dropdown-options {
+      position: absolute;
+      max-width: calc(100% + 100px);
+      min-width: 100%;
+      top: calc(100% + 2px);
+      z-index: 999;
+      background-color: #ffffff;
+      border: 1px solid #dcdee2;
+      max-height: 200px;
+      min-height: 100px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      white-space: nowrap;
+      .option-selected {
+        color: rgba(45, 140, 240, 0.9);
+      }
+      .option {
+        cursor: pointer;
+        padding: 5px;
+        padding-left: 10px;
+        &:hover {
+          background-color: #f3f3f3;
+        }
+      }
+    }
+    .nodata {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      color: rgba(45, 140, 240, 0.9);
+    }
+  }
+}

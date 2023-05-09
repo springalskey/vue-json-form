@@ -1,0 +1,2 @@
+## 为什么要写这个组件
+在表单配置中为了方便的支持startField和endField

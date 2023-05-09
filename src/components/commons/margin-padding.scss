@@ -1,0 +1,68 @@
+// class= "p-r-1 p-t-1 p-b-1 p-l-1"
+// 生产0-30px
+
+@for $i from 0 through 30 {
+  .p-t-#{$i} {
+    padding-top: $i + px !important;
+  }
+  .p-b-#{$i} {
+    padding-bottom: $i + px !important;
+  }
+  .p-l-#{$i} {
+    padding-left: $i + px !important;
+  }
+  .p-r-#{$i} {
+    padding-right: $i + px !important;
+  }
+}
+
+// class= "m-r-1 m-t-1 m-b-1 m-l-1"
+// 生产0-30px
+@for $i from 0 through 30 {
+  .m-t-#{$i} {
+    margin-top: $i + px !important;
+  }
+  .m-b-#{$i} {
+    margin-bottom: $i + px !important;
+  }
+  .m-l-#{$i} {
+    margin-left: $i + px !important;
+  }
+  .m-r-#{$i} {
+    margin-right: $i + px !important;
+  }
+}
+
+// padding
+.p-0 {
+  padding: 0;
+}
+.p-10 {
+  padding: 10px;
+}
+.p-15 {
+  padding: 15px;
+}
+.p-20 {
+  padding: 20px;
+}
+.p-30 {
+  padding: 30px;
+}
+
+// margin
+.p-0 {
+  margin: 0;
+}
+.m-10 {
+  margin: 10px;
+}
+.m-15 {
+  margin: 15px;
+}
+.m-20 {
+  margin: 20px;
+}
+.m-30 {
+  margin: 30px;
+}
