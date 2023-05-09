@@ -16,10 +16,6 @@ npm install
 npm start
 ```
 
-### NodeJs Version
-
-12.7.0
-
 ## Demo
 
 ```html
