@@ -2,7 +2,9 @@
 base on Vue2
 
 ## How to use
-`npm install git+ssh://git@github.com:springalskey/vue-json-form.git --save`
+```
+npm install git+ssh://git@github.com:springalskey/vue-json-form.git --save
+```
 
 ## Project setup
 
