@@ -3,7 +3,7 @@ base on Vue2
 
 ## How to use
 ```
-npm install git+ssh://git@github.com:springalskey/vue-json-form.git --save
+npm install git+ssh://git@github.com:springalskey/vue-json-form.git#v0.0.1 --save
 ```
 
 ## Project setup
