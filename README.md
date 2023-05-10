@@ -38,16 +38,27 @@ export default {
       },
       list: [
         {
-          type: 'color',
-          label: 'color',
-          field: 'color',
-          rules: { required: true }
+          type: 'input',
+          label: 'nick name',
+          field: 'nickname',
+          rules: {
+            required: true,
+            valid: ({ value, formData }) => {
+              if (value.includes('null')) {
+                return {
+                  matched: false,
+                  message: 'Null is not allowed'
+                };
+              }
+              return { matched: true };
+            }
+          }
         },
         {
           type: 'input-number',
           label: 'buy count',
           field: 'buyCount',
-          rules: { required: true, num: true }
+          rules: {required: true, num: true }
         },
         {
           type: 'radio',
@@ -82,6 +93,16 @@ export default {
           rules: { required: true },
           // vif control showOrHide
           vif: (formData) => formData.type === 1
+        },
+        {
+          type: 'daterange',
+          label: '日期范围',
+          field: 'dateRange',
+          rules: { required: true },
+          attrs: {
+            startField: 'beginDate',
+            endField: 'endDate'
+          }
         },
       ]
     };
