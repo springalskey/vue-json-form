@@ -20,9 +20,14 @@ npm start
 
 ## Demo
 
+```js
+// main.js
+import 'vue-json-form';
+```
+
 ```html
 <vue-json-form v-model="formData" :list="list" vid="vid-test"></vue-json-form>
-<el-button vid="vid-test" v-onsubmit="onSave" type="primary">保存</el-button>
+<el-button vid="vid-test" v-onsubmit="onSubmit" type="primary">submit</el-button>
 ```
 ```js
 export default {
@@ -34,19 +39,19 @@ export default {
       list: [
         {
           type: 'color',
-          label: '颜色',
+          label: 'color',
           field: 'color',
           rules: { required: true }
         },
         {
           type: 'input-number',
-          label: '购买数量',
+          label: 'buy count',
           field: 'buyCount',
-          rules: { required: true }
+          rules: { required: true, num: true }
         },
         {
           type: 'radio',
-          label: '活动类型',
+          label: 'type',
           field: 'type',
           rules: { required: true },
           options: [
@@ -55,9 +60,25 @@ export default {
           ]
         },
         {
+          type: 'select',
+          label: 'province',
+          field: 'province',
+          rules: { required: true },
+          optionsAsync: async () => {
+            return new Promise((resolve) => {
+              setTimeout(() => {
+                resolve([
+                  { label: 'beijing', value: 1 },
+                  { label: 'shanghai', value: 2 }
+                ])
+              }, 300);
+            })
+          }
+        },
+        {
           type: 'switch',
-          label: '是否显示',
-          field: 'isShow',
+          label: 'open',
+          field: 'isOpen',
           rules: { required: true },
           // vif control showOrHide
           vif: (formData) => formData.type === 1
@@ -66,13 +87,22 @@ export default {
     };
   },
   methods: {
-    async onSave(valided) {
+    async onSubmit(valided, { formData }) {
       if (!valided) return;
-      // 校验通过TOTO:
+      // TOTO:
+      console.log(formData);
     }
   }
 };
 ```
 
-## 其他
-如果您对这个项目敢兴趣，请给个小星星哦。另外，如果需要更高级的功能，(可以查看)[https://zhizhi.info]
+## Other
+
+More features and services [https://zhizhi.info]
+
+
+## License
+
+[MIT](https://opensource.org/licenses/MIT)
+
+Copyright (c) 2023-present, Quan Yang
