@@ -1,5 +1,5 @@
 # vue-json-form
-base on Vue2
+vue-json-form base on Vue2
 
 ## How to use
 ```
