@@ -1,5 +1,5 @@
 # vue-json-form
-vue-json-form base on Vue2
+vue-json-form base on Vue2 and ElementUI
 
 ## How to use
 ```
