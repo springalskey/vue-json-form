@@ -34,7 +34,7 @@ export default {
         // name: '测试测试看看',
         // status: [1],
         // createTime: '2020-03-03 12:00:34',
-        // activittyDate: '2020-03-03',
+        // activityDate: '2020-03-03',
         // start_time: '2020-03-03',
         // end_time: '2020-03-31',
         // start_datetime: '2020-03-03 12:00:00',
@@ -176,7 +176,7 @@ export default {
         {
           type: 'date',
           label: '活动日期',
-          field: 'activittyDate',
+          field: 'activityDate',
           prefix: '<div>自定义prefix</div>',
           suffix: '<div>自定义suffix</div>',
           rules: { required: true }
@@ -396,7 +396,7 @@ div[form-field='city1'] .th-e-cascader {
   display: block;
 }
 
-div[form-field='activittyDate'] .zx-form-item {
+div[form-field='activityDate'] .zx-form-item {
   /* flex-grow: 1; */
 }
 </style>
