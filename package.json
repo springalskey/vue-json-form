@@ -1,6 +1,6 @@
 {
   "name": "vue-json-form",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "homepage": "https://github.com/springalskey/vue-json-form",
   "main": "src/components/index.js",
   "scripts": {
