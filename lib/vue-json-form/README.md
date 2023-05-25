@@ -4,19 +4,6 @@ vue-json-form base on Vue2 and ElementUI
 ## How to use
 ```
 npm install @vue-json/vue-json-form
-
-```
-
-## Project setup
-
-```
-npm install
-```
-
-### Project start
-
-```
-npm start
 ```
 
 ## Demo
@@ -25,7 +12,6 @@ npm start
 // main.js
 import '@vue-json/vue-json-form';
 import '@vue-json/vue-json-form/index.css';
-
 ```
 
 ```html

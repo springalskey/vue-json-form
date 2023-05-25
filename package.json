@@ -6,13 +6,16 @@
   "scripts": {
     "start": "npm run serve",
     "serve": "cross-env ZX_ENV=dev vue-cli-service serve",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "cross-env ZX_ENV=prod vue-cli-service build --target lib --name vue-json-form/index --dest lib src/components/index.js"
   },
   "dependencies": {
+    "@vue-json/vue-json-form": "0.0.1",
     "axios": "0.21.1",
     "core-js": "3.6.5",
     "crypto-js": "3.1.2",
     "element-ui": "2.15.1",
+    "user": "0.0.0",
     "vue": "2.6.11",
     "vue-router": "3.5.1"
   },

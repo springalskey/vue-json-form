@@ -1,0 +1,14 @@
+{
+  "name": "@vue-json/vue-json-form",
+  "version": "0.0.1",
+  "private": false,
+  "author": "springalsky@gmail.com",
+  "homepage": "https://github.com/springalskey/vue-json-form",
+  "main": "index.umd.min.js",
+  "license": "MIT",
+  "files": [
+    "*"
+  ],
+  "scripts": {},
+  "description": "vue-json-form base on Vue2 and ElementUI"
+}
