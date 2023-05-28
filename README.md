@@ -24,10 +24,9 @@ npm start
 // main.js
 import '@vue-json/vue-json-form';
 import '@vue-json/vue-json-form/index.css';
-
 ```
-
 ```html
+<!-- html -->
 <vue-json-form v-model="formData" :list="list" vid="vid-test"></vue-json-form>
 <el-button vid="vid-test" v-onsubmit="onSubmit" type="primary">submit</el-button>
 ```
@@ -41,7 +40,7 @@ export default {
       list: [
         {
           type: 'input',
-          label: 'nick name',
+          label: 'nickname',
           field: 'nickname',
           rules: {
             required: true,
@@ -58,8 +57,8 @@ export default {
         },
         {
           type: 'input-number',
-          label: 'buy count',
-          field: 'buyCount',
+          label: 'count',
+          field: 'count',
           rules: {required: true, num: true }
         },
         {
@@ -68,8 +67,8 @@ export default {
           field: 'type',
           rules: { required: true },
           options: [
-            { label: '单品活动', value: 1 },
-            { label: '满减活动', value: 2 }
+            { label: 'type1', value: 1 },
+            { label: 'type2', value: 2 }
           ]
         },
         {
@@ -81,8 +80,8 @@ export default {
             return new Promise((resolve) => {
               setTimeout(() => {
                 resolve([
-                  { label: 'beijing', value: 1 },
-                  { label: 'shanghai', value: 2 }
+                  { label: 'London', value: 1 },
+                  { label: 'New York', value: 2 }
                 ])
               }, 300);
             })
@@ -98,7 +97,7 @@ export default {
         },
         {
           type: 'daterange',
-          label: '日期范围',
+          label: 'daterange',
           field: 'dateRange',
           rules: { required: true },
           attrs: {
