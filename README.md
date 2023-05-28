@@ -18,7 +18,7 @@ npm install
 npm start
 ```
 
-## Demo
+## Usage
 
 ```js
 // main.js
