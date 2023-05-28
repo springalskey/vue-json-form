@@ -6,15 +6,15 @@ vue-json-form base on Vue2 and ElementUI
 npm install @vue-json/vue-json-form
 ```
 
-## Demo
+## Usage
 
 ```js
 // main.js
 import '@vue-json/vue-json-form';
 import '@vue-json/vue-json-form/index.css';
 ```
-
 ```html
+<!--html-->
 <vue-json-form v-model="formData" :list="list" vid="vid-test"></vue-json-form>
 <el-button vid="vid-test" v-onsubmit="onSubmit" type="primary">submit</el-button>
 ```
